@@ -14,7 +14,7 @@ import { RouterLink, RouterView } from 'vue-router'
         </li>
       </ul>
     </nav>
-
+    <ModeSwitcher />
   </header>
 
   <RouterView />
@@ -52,7 +52,7 @@ a::after {
   left: 0;
   width: 0;
   height: 4px;
-  background-color: var(--dynamique-color);
+  background-color: var(--dynamic-color);
   transition: width .3s ease;
 }
 
