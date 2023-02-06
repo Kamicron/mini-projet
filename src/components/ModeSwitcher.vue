@@ -26,6 +26,12 @@ export default {
     if (this.darkMode) {
       document.body.classList.toggle("dark-mode", this.darkMode);
     }
-  }
+  },
 };
 </script>
+
+<style>
+body {
+  transition: background-color 0.2s ease;
+}
+</style>

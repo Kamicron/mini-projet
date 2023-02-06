@@ -25,9 +25,10 @@
           <div id="AC" class="cal_key key_special" @click="presskey('AC')">
             AC
           </div>
-          <div id="1" class="cal_key" @click="presskey('1')">1</div>
-          <div id="2" class="cal_key" @click="presskey('2')">2</div>
-          <div id="3" class="cal_key" @click="presskey('3')">3</div>
+          <div id="7" class="cal_key" @click="presskey('7')">7</div>
+          <div id="8" class="cal_key" @click="presskey('8')">8</div>
+          <div id="9" class="cal_key" @click="presskey('9')">9</div>
+
           <div id="+" class="cal_key key_function" @click="presskey('+')">
             +
           </div>
@@ -39,9 +40,9 @@
             -
           </div>
 
-          <div id="7" class="cal_key" @click="presskey('7')">7</div>
-          <div id="8" class="cal_key" @click="presskey('8')">8</div>
-          <div id="9" class="cal_key" @click="presskey('9')">9</div>
+          <div id="1" class="cal_key" @click="presskey('1')">1</div>
+          <div id="2" class="cal_key" @click="presskey('2')">2</div>
+          <div id="3" class="cal_key" @click="presskey('3')">3</div>
           <div id="/" class="cal_key key_function" @click="presskey('/')">
             /
           </div>
@@ -63,7 +64,7 @@
         <div class="lastResult-values">
           <div v-for="(row, index) in lastResult" v-bind:key="index">
             {{ row.expression }} = {{ row.value }}
-            <hr v-if="index !== lastResult.length-1"/>
+            <hr v-if="index !== lastResult.length - 1" />
           </div>
         </div>
       </div>
@@ -169,7 +170,7 @@ export default {
   justify-content: space-around;
 }
 
-hr{
+hr {
   margin: 0;
 }
 

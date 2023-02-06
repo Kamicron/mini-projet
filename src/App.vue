@@ -3,10 +3,10 @@
     <nav class="header_menu">
       <ul class="header_menu-list">
         <li class="header_menu-item">
-          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/">Acceuil</RouterLink>
         </li>
         <li class="header_menu-item">
-          <RouterLink to="/about">About</RouterLink>
+          <RouterLink to="/calc">Calculatrice</RouterLink>
         </li>
       </ul>
       <transition name="fade">
