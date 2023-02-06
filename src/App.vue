@@ -22,6 +22,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import ModeSwitcher from './components/ModeSwitcher.vue';
 
+
 export default {
   components: {
     RouterLink,
@@ -29,6 +30,7 @@ export default {
     ModeSwitcher
   }
 };
+
 </script>
 
 <style scoped>
