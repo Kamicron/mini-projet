@@ -8,6 +8,9 @@
         <li class="header_menu-item">
           <RouterLink to="/calc">Calculatrice</RouterLink>
         </li>
+        <li class="header_menu-item">
+          <RouterLink to="/chat">Chat</RouterLink>
+        </li>
       </ul>
       <transition name="fade">
         <ModeSwitcher />

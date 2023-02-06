@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="about">
+    <div class="main_title">
       <h1>Calculatrice</h1>
     </div>
     <div class="wrapper">

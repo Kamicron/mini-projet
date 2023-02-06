@@ -29,3 +29,12 @@ body.dark-mode {
 main{
   margin: 0 10%;
 }
+.main_title{
+  color : var(--main-color);
+  font-size: 2.5em;
+  margin: 40px 0;
+}
+
+h1 {
+  font-size: 1.5em;
+}
