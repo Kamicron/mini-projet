@@ -1,6 +1,6 @@
 :root {
-  --main-dark_color: #474747;
-  --main-white_color: #F5F5F5;
+  --main-dark_color: #F5F5F5;
+  --main-white_color: #474747;
   --main-color : #72A276;
   --dynamic-color: #ED1C24;
   --second-color: #666B6A;
@@ -14,6 +14,16 @@ body{
     padding: 0;
     color: var(--main-white_color);
 }
+
+
+body.dark-mode {
+  --main-dark_color: #474747;
+  --main-white_color: #F5F5F5;
+  --main-color : #72A276;
+  --dynamic-color: #ED1C24;
+  --second-color: #666B6A;
+}
+
 
 main{
   margin: 0 10%;

@@ -1,10 +1,7 @@
 <template>
-  <div>
-    <button @click="toggleDarkMode">
-      <template v-if="darkMode">Light Mode</template>
-      <template v-else>Dark Mode</template>
-    </button>
-  </div>
+  <button @click="toggleDarkMode">
+    {{ darkMode ? "Light Mode" : "Dark Mode" }}
+  </button>
 </template>
 
 <script>
@@ -17,6 +14,8 @@ export default {
   methods: {
     toggleDarkMode() {
       this.darkMode = !this.darkMode;
+
+      document.body.classList.toggle('dark-mode', this.darkMode);
     }
   }
 };

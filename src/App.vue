@@ -1,7 +1,3 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
   <header>
     <nav class="header_menu">
@@ -9,23 +5,38 @@ import { RouterLink, RouterView } from 'vue-router'
         <li class="header_menu-item">
           <RouterLink to="/">Home</RouterLink>
         </li>
-        <li  class="header_menu-item">
+        <li class="header_menu-item">
           <RouterLink to="/about">About</RouterLink>
         </li>
       </ul>
+      <transition name="fade">
+        <ModeSwitcher />
+      </transition>
     </nav>
-    <ModeSwitcher />
-  </header>
 
-  <RouterView />
+    <RouterView />
+  </header>
 </template>
+
+<script>
+import { RouterLink, RouterView } from 'vue-router'
+import ModeSwitcher from './components/ModeSwitcher.vue';
+
+export default {
+  components: {
+    RouterLink,
+    RouterView,
+    ModeSwitcher
+  }
+};
+</script>
 
 <style scoped>
 .header_menu {
   background-color: var(--second-color);
 }
 
-.header_menu-list{
+.header_menu-list {
   display: flex;
   list-style-type: none;
   justify-content: right;
@@ -60,4 +71,10 @@ a:hover::after {
   width: 100%;
 }
 
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
 </style>
