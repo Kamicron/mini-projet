@@ -163,13 +163,6 @@ export default {
 </script>
 
 <style>
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 100px;
-  justify-content: space-around;
-}
-
 hr {
   margin: 0;
 }
